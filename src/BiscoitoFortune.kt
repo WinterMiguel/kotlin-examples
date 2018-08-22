@@ -1,15 +1,23 @@
+//fun main(args: Array<String>) {
+//
+//    var fortuna: String = ""
+//
+//    repeat (10 ) {
+//
+//        fortuna = getFortune(birthday = getBirthday())
+//        println("\nYour fortune is: $fortuna")
+//       if(fortuna.contains("Take it easy")) break;
+//
+//    }
+//
+//}
+
 fun main(args: Array<String>) {
-
-    var fortuna : String
-
-    for (i in 1..10 ) {
-
-        fortuna = getFortune(birthday = getBirthday())
-
-        println("\nYour fortune is: $fortuna")
-
+    var fortune: String = ""
+    while (!fortune.contains("Take it easy")) {
+        fortune = getFortune(getBirthday())
+        println("\nYour fortune is: $fortune")
     }
-
 }
 
 fun getBirthday(): Int {
